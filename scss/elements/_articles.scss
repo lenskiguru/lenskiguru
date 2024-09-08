@@ -2,14 +2,18 @@
 @use "sass:map";
 
 .container2 {
-    width: 100%;
+
     padding: 5rem;
+    width: 100wh;
+    height: auto;
+
     background-color: map.get($colors, color4);
     font-family: map.get($fonts, primary);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column; 
+    
 
   
     .container-title {
@@ -19,11 +23,12 @@
       font-weight: 100;
       margin-bottom: 1rem;
   }
+
+
 }
 
   .box {
-    width: 80rem;
-    height: 30rem;
+    width: 100%;
     border: 1px solid black;
     gap: 10px;
     display: flex;
@@ -46,6 +51,13 @@
       gap: 0.5rem;
       text-align: justify;
       padding-right: 3rem;
+
+      p, li {
+        color: map.get($colors, color3);
+        text-align: justify;
+        width: 90%;
+        max-width: 70rem;
+      }
 
       .what {
         color: map.get($colors, color2);

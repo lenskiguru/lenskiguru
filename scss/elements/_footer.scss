@@ -1,0 +1,16 @@
+@use "sass:map";
+
+.footer {
+    padding: 5rem;
+    width: 100wh;
+    height: auto;
+
+    background-color: map.get($colors, color3);
+    font-family: map.get($fonts, primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+    color: map.get($colors, color4);
+}
