@@ -1,7 +1,7 @@
 // settings/_rwd.scss
 @mixin respond-to($breakpoint) {
     @if $breakpoint == mobile {
-      @media (max-width: 768px) {
+      @media (max-width: 400px) {
         @content;
       }
     }
