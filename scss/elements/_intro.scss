@@ -1,0 +1,43 @@
+// elements/_intro.scss
+@use "sass:map";
+
+.container {
+    width: 100%;
+    background-color: map.get($colors, color4);
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: map.get($fonts, primary);
+    margin: 3rem auto; 
+  }
+  
+  .me {
+    width: 30%; // Instead of 500px
+    border-radius: 50%;
+    margin: 2rem 0; // Instead of 50px
+  }
+  
+  .main-title {
+    font-weight: 100;
+    font-size: 4rem; // Instead of 70px
+    color: map.get($colors, color2);
+    text-transform: uppercase;
+  }
+  
+  .sub-title {
+    color: map-get($colors, color1);
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+  
+  @include respond-to(mobile) {
+    .main-title {
+      font-size: 2.5rem;
+    }
+    .me {
+      width: 10rem;
+      height: 10rem;
+    }
+  }
+  

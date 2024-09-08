@@ -1,0 +1,44 @@
+// elements/_section.scss
+@use "sass:map";
+
+.container1 {
+    width: 100wh;
+    height: auto;
+    padding: 5rem;
+    background-color: map.get($colors, color3);
+    font-family: map.get($fonts, primary);
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+
+    p {
+        color: map.get($colors, color4);
+        text-align: justify;
+        width: 90%;
+        max-width: 40rem; // Limiting text width for readability
+      }
+
+    .line {
+        background-color: map.get($colors, color4);
+    }
+  }
+  
+  .container-title {
+    color: map.get($colors, color2);
+    font-size: 2.5rem; // Replacing 40px
+    text-transform: uppercase;
+    font-weight: 100;
+  }
+
+  
+  @include respond-to(mobile) {
+    .box-title {
+      font-size: 1.5rem;
+    }
+    .container1 p {
+      width: 100%;
+    }
+  }
+  

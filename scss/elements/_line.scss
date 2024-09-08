@@ -1,0 +1,16 @@
+@use "sass:map";
+
+.line {
+    width: 40rem;
+    height: 0.1rem;
+    margin: 0 auto 2rem auto;
+    background-color: map.get($colors, color3);
+  }
+
+  @include respond-to(mobile) {
+    .line {
+      width: 100%;  // Make the line full width on mobile
+      margin: 1rem 0;  // Adjust margin for smaller screens
+    }
+  }
+  

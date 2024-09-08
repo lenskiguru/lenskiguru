@@ -1,0 +1,91 @@
+// elements/_section.scss
+@use "sass:map";
+
+.container2 {
+    width: 100%;
+    padding: 5rem;
+    background-color: map.get($colors, color4);
+    font-family: map.get($fonts, primary);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+
+  
+    .container-title {
+      color: map.get($colors, color2);
+      font-size: 2.5rem; 
+      text-transform: uppercase;
+      font-weight: 100;
+      margin-bottom: 1rem;
+  }
+}
+
+  .box {
+    width: 80rem;
+    height: 30rem;
+    border: 1px solid black;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 1rem;
+
+    img {      
+      width: 20%;
+      object-fit: contain;
+      float: left;
+      margin: 50px;
+    }
+
+    .box-description {
+      width: 70%;
+      display: flex;
+      justify-content: space-around;
+      align-self:center;
+      flex-direction: column;
+      gap: 0.5rem;
+      text-align: justify;
+      padding-right: 3rem;
+
+      .what {
+        color: map.get($colors, color2);
+      }
+
+      .when {
+        font-style: italic;
+      }
+
+      span {
+        color: map.get($colors, color5);
+      }
+    }
+
+    ul {
+      list-style-type: ">";
+      padding-left: 10px;
+
+      li {
+        line-height: 2em;
+      }
+    }
+  }
+
+  
+  @include respond-to(mobile) {
+    .box {
+      width: 100%;  // Make the box full width on mobile
+      height: auto;  // Adjust height automatically for smaller screens
+      flex-direction: column;  // Stack content vertically
+  
+      img {
+        width: 40%;  // Full-width image
+        margin: 1rem 0;  // Adjust margin
+      }
+  
+      .box-description {
+        width: 100%;  // Make the description full width
+        padding: 1rem;  // Add padding for better spacing
+      }
+    }
+  }
+  
