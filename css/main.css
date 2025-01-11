@@ -402,6 +402,38 @@ a {
   position: relative;
 }
 
+.social-links {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+.social-links a {
+  display: inline-block;
+  width: 32px;
+  height: 32px;
+}
+.social-links a img {
+  width: 100%;
+  height: auto;
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+.social-links a img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.icon {
+  color: white;
+}
+
 .container-parallax {
   width: 100vw;
   font-family: "SUSE";
