@@ -14,9 +14,19 @@
 .menu {
   display: flex;
   text-transform: uppercase;
+  gap: 1rem;
+
   a {
-    margin-left: 2rem; 
-    color: map.get($colors, color4);
+    color: map-get($colors, color4); 
+    font-size: 1.2rem;
+    font-weight: 300;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out, transform 0.2s ease-in-out;
+
+    &:hover {
+      color: lighten(map-get($colors, color2), 15%); 
+      transform: scale(1.1); 
+    }
   }
 
   li {
@@ -58,12 +68,12 @@
     gap: 0.6rem;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease-in-out;
-    transform: translateX(100%); /* Скрываем меню за экраном */
+    transform: translateX(100%); 
   }
 
-  /* Когда чекбокс отмечен (клик по бургеру) — показываем меню */
+ 
   .menu-toggle:checked + .burger-menu + .menu {
     display: flex;
-    transform: translateX(0); /* Высовываем меню */
-  }
+    transform: translateX(0);
+}
 }

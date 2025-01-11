@@ -2,9 +2,9 @@
 @use "sass:map";
 
 .container1 {
-    width: 100wh;
-    height: auto;
-    padding: 5rem;
+    width: 100vw;
+    height: 30vh;
+    padding: 3rem;
     background-color: map.get($colors, color3);
     font-family: map.get($fonts, primary);
     text-align: center;
@@ -16,8 +16,8 @@
     p {
         color: map.get($colors, color4);
         text-align: justify;
-        width: 90%;
-        max-width: 40rem; // Limiting text width for readability
+        width: 100%;
+        max-width: 50rem; 
       }
 
     .line {
