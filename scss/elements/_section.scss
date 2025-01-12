@@ -33,12 +33,28 @@
   }
 
   
-  @include respond-to(mobile) {
-    .box-title {
-      font-size: 1.5rem;
+  @media (max-width: 768px) {
+    .container2, .container3 {
+        padding: 30px 20px;
+        text-align: center;
+        height: fit-content;
     }
-    .container1 p {
-      width: 100%;
+
+    .box {
+        width: 90%;
+        padding: 15px;
+        text-align: center;
+        margin: 0 auto;
     }
-  }
-  
+
+    .container-title {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        letter-spacing: 0.05rem;
+    }
+
+    .line {
+        width: 50%;
+        margin: 0 auto 10px auto;
+    }
+}
