@@ -566,8 +566,12 @@ a {
     min-height: 180vh;
   }
   .container-title {
-    letter-spacing: 0px;
     font-size: 1.5rem;
+    letter-spacing: 0.1rem;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    display: block;
   }
   .skills-list {
     margin: 0;
@@ -587,5 +591,27 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     background-repeat: repeat-y;
+  }
+}
+@media (max-width: 480px) {
+  .skills-box {
+    padding: 0.5rem;
+  }
+  .skills-box h3 {
+    font-size: 1.2rem;
+  }
+  .skills-list {
+    gap: 1rem;
+  }
+  .skills-list li {
+    font-size: 1rem;
+    line-height: 1.2rem;
+    margin: 0.5rem 0;
+  }
+  .parallax {
+    height: 40rem;
+  }
+  .parallax-img {
+    min-height: 130vh;
   }
 }/*# sourceMappingURL=main.css.map */
