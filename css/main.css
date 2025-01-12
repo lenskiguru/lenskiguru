@@ -530,7 +530,7 @@ a {
           backdrop-filter: blur(5px);
 }
 .parallax .skills-box h3 {
-  letter-spacing: 5rem;
+  letter-spacing: 4rem;
   font-weight: 800;
 }
 .parallax .skills {
@@ -539,8 +539,8 @@ a {
   font-size: 1.2rem;
 }
 .parallax .skills li {
-  margin: 3rem 0;
-  line-height: 4rem;
+  margin: 2rem 0;
+  line-height: 3rem;
 }
 .parallax .skills-list {
   display: -webkit-box;
@@ -582,7 +582,7 @@ a {
     text-align: center;
   }
   .parallax {
-    height: 55rem;
+    height: 60rem;
     z-index: -2;
   }
   .parallax-img {
@@ -598,7 +598,7 @@ a {
     padding: 0.5rem;
   }
   .skills-box h3 {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .skills-list {
     gap: 1rem;
@@ -609,7 +609,7 @@ a {
     margin: 0.5rem 0;
   }
   .parallax {
-    height: 40rem;
+    height: 60rem;
   }
   .parallax-img {
     min-height: 130vh;
