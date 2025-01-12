@@ -530,8 +530,9 @@ a {
           backdrop-filter: blur(5px);
 }
 .parallax .skills-box h3 {
-  letter-spacing: 4rem;
+  letter-spacing: 3rem;
   font-weight: 800;
+  font-size: 1.5rem;
 }
 .parallax .skills {
   list-style: none;
@@ -546,7 +547,10 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 10rem;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50vw;
 }
 
 @media (max-width: 768px) {
@@ -567,18 +571,29 @@ a {
   }
   .container-title {
     font-size: 1.5rem;
-    letter-spacing: 0.1rem;
+    letter-spacing: 0.5rem;
     text-align: center;
     width: 100%;
     margin: 0 auto;
     display: block;
   }
   .skills-list {
-    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-column-gap: 0;
+       -moz-column-gap: 0;
+            column-gap: 0;
+  }
+  .skills-list ul {
+    margin: 0 auto;
   }
   .skills-list li {
     line-height: 0.5rem;
-    margin: 0;
     text-align: center;
   }
   .parallax {
@@ -591,27 +606,5 @@ a {
     -o-object-fit: cover;
        object-fit: cover;
     background-repeat: repeat-y;
-  }
-}
-@media (max-width: 480px) {
-  .skills-box {
-    padding: 0.5rem;
-  }
-  .skills-box h3 {
-    font-size: 1rem;
-  }
-  .skills-list {
-    gap: 1rem;
-  }
-  .skills-list li {
-    font-size: 1rem;
-    line-height: 1.2rem;
-    margin: 0.5rem 0;
-  }
-  .parallax {
-    height: 60rem;
-  }
-  .parallax-img {
-    min-height: 130vh;
   }
 }/*# sourceMappingURL=main.css.map */
