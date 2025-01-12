@@ -9,6 +9,42 @@ a {
   text-decoration: none;
 }
 
+@media (max-width: 768px) {
+  .navbar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .menu {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+  }
+  .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+  }
+  .me {
+    width: 100%;
+    max-width: 250px;
+  }
+  .main-title {
+    font-size: 22px;
+  }
+  .sub-title {
+    font-size: 16px;
+  }
+}
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -527,4 +563,25 @@ a {
   display: -ms-flexbox;
   display: flex;
   gap: 10rem;
+}
+
+@media (max-width: 768px) {
+  .parallax-img {
+    height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .skills-box {
+    padding: 10px;
+  }
+  .skills-list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .skills-list ul {
+    padding: 0;
+    text-align: center;
+  }
 }/*# sourceMappingURL=main.css.map */

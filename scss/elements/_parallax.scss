@@ -76,3 +76,23 @@
         gap: 10rem;
     }
 }
+
+@media (max-width: 768px) {
+    .parallax-img {
+        height: 200px;
+        object-fit: cover;
+    }
+
+    .skills-box {
+        padding: 10px;
+    }
+
+    .skills-list {
+        flex-direction: column;
+    }
+
+    .skills-list ul {
+        padding: 0;
+        text-align: center;
+    }
+}

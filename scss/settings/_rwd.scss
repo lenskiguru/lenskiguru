@@ -12,3 +12,34 @@
     }
   }
   
+
+  @media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu {
+        flex-direction: column;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .me {
+        width: 100%;
+        max-width: 250px;
+    }
+
+    .main-title {
+        font-size: 22px;
+    }
+
+    .sub-title {
+        font-size: 16px;
+    }
+}
